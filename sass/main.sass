@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito')
 $break: 768px
+$blue: steelblue
+$gray1: #e3e3e3
+$gray2: #d5d5d5
+$gray3: #f8f8f8
+$p: #777
 
 body
     font-family: 'Nunito', sans-serif
 
 .navbar
-    background-color: #e3e3e3
+    background-color: $gray1
     padding: 0
     border: none
 
@@ -18,18 +23,47 @@ body
         a 
             color: white
     li:hover a
-        border-bottom: 3px solid steelblue
+        border-bottom: 3px solid $blue
     .active a
-        color: steelblue
-        border-bottom: 3px solid steelblue
+        color: $blue
+        border-bottom: 3px solid $blue
 
 .navbar-brand 
     height: 53px
     padding-top: 5px
-    border-left: 30px solid #d5d5d5
-    border-right: 1px solid #d5d5d5
+    border-left: 30px solid $gray2
+    border-right: 1px solid $gray2
     text-align: center
     color: bbb
+
+.main
+    display: flex
+    padding: 20px
+    .project
+        width: 300px;
+        background: $gray3
+        border-right: 2px solid $blue
+        // border-bottom: 2px solid $blue
+        margin: 10px
+        h3 
+            display: block
+            color: white
+            background: $blue
+            padding: 10px
+            margin: 0 0 40px 0
+        p 
+            color: $p
+            margin-bottom: 30px
+            padding: 10px 10px 10px 20px
+        button 
+            padding: 10px 30px
+            background: none
+            color: $blue
+            border: 1px solid $blue
+            margin: 0 10px 20px 20px
+        button:hover 
+            background: $blue
+            color: white
 
 
 
