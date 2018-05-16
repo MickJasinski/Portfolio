@@ -3,8 +3,8 @@ $break: 768px
 $blue: steelblue
 $gray1: #e3e3e3
 $gray2: #d5d5d5
-$gray3: #f8f8f8
-$p: #777
+$gray3: #eee
+$p: #999
 
 body
     font-family: 'Nunito', sans-serif
@@ -15,18 +15,21 @@ body
     border: none
 
 .navbar-nav 
-    width: calc(100%-90px)
+    display: inline-block
     text-align: center
     li 
         // float: none
         display: inline-block
         a 
-            color: white
+            color: $p
     li:hover a
         border-bottom: 3px solid $blue
     .active a
         color: $blue
         border-bottom: 3px solid $blue
+
+.navbar-light 
+    text-align: center
 
 .navbar-brand 
     height: 53px
@@ -36,14 +39,17 @@ body
     text-align: center
     color: bbb
 
+.icon-bar
+    background: $blue
+
 .main
     display: flex
+    justify-content: center
     padding: 20px
     .project
-        width: 300px;
+        width: 275px
         background: $gray3
-        border-right: 2px solid $blue
-        // border-bottom: 2px solid $blue
+        border: 2px solid $blue
         margin: 10px
         h3 
             display: block
@@ -54,14 +60,20 @@ body
         p 
             color: $p
             margin-bottom: 30px
-            padding: 10px 10px 10px 20px
-        button 
-            padding: 10px 30px
-            background: none
+            padding: 10px
+        .btn 
+            bottom: 20px
+            width: 100px
+            padding: 10px
+            float: left
+            background: white
             color: $blue
-            border: 1px solid $blue
+            border: 2px solid $blue
             margin: 0 10px 20px 20px
-        button:hover 
+            text-transform: uppercase
+            font-weight: bold           
+            text-decoration: none
+        .btn:hover 
             background: $blue
             color: white
 
