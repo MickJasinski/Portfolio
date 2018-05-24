@@ -44,10 +44,14 @@ body
 
 .main
     display: flex
+    flex-flow: row wrap
     justify-content: center
     padding: 20px
+    box-sizing: border-box
     .project
+        position: relative
         width: 275px
+        min-height: 275px
         background: $gray3
         border: 2px solid $blue
         margin: 10px
@@ -61,21 +65,23 @@ body
             color: $p
             margin-bottom: 30px
             padding: 10px
-        .btn 
+        .btns
+            position: absolute
             bottom: 20px
-            width: 100px
-            padding: 10px
-            float: left
-            background: white
-            color: $blue
-            border: 2px solid $blue
-            margin: 0 10px 20px 20px
-            text-transform: uppercase
-            font-weight: bold           
-            text-decoration: none
-        .btn:hover 
-            background: $blue
-            color: white
+            .btn 
+                width: 100px
+                padding: 10px
+                // float: left
+                background: white
+                color: $blue
+                border: 2px solid $blue
+                margin: 0 10px 20px 20px
+                text-transform: uppercase
+                font-weight: bold           
+                text-decoration: none
+            .btn:hover 
+                background: $blue
+                color: white
 
 
 
